@@ -1,0 +1,80 @@
+body {
+    background-color: #12285f;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 350px;
+    margin: 100px auto;
+    background:  #f4f3ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 40px 10px  rgba(1, 1, 1, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #121212;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: #e8f5e9;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    font-size: 12px;
+    color: white;
+    border: none;
+}
+
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+.edit-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+}
+.edit-btn:hover{
+    background-color: #cc0000;
+}
