@@ -1,25 +1,54 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
+    <header>🎯 Smart Event Dashboard</header>
 
     <div class="container">
-        <h1>My To-Do List</h1>
+      
+      <div class="card">
+        <h2>Add New Event</h2>
 
-        <div class="input-section">
-            <input type="text" id="taskInput" placeholder="Enter a task">
-            <button onclick="addTask()">Add</button>
+        <label>Event Title</label>
+        <input type="text" id="title" />
+
+        <label>Event Date</label>
+        <input type="date" id="date" />
+
+        <label>Category</label>
+        <select id="category">
+          <option>Conference</option>
+          <option>Workshop</option>
+          <option>Seminar</option>
+          <option>Hackathon</option>
+        </select>
+
+        <label>Description</label>
+        <textarea id="description"></textarea>
+
+        <button onclick="addEvent()">Add Event</button>
+      </div>
+
+      
+      <div class="card">
+        <h2>My Events</h2>
+        <div class="top-buttons">
+          <button onclick="clearEvents()">Clear All Events</button>
+          <button onclick="addSample()">Add Sample Events</button>
         </div>
 
-        <ul id="taskList"></ul>
+        <div id="eventList">
+          <p class="empty">No events yet. Add your first event!</p>
+        </div>
+      </div>
     </div>
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
+
